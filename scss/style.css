@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+/*font-family*/
+/*Colors*/
+/*Primary*/
+/*Neutral*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: hsl(210deg, 46%, 95%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container_main {
+  /*background-color: red;*/
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: "a" "b" "c" "d" "e";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 1.2rem;
+}
+.container_main .container_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 1.5rem 2rem;
+}
+.container_main .container_item .container_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container_main .container_item .container_header img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid hsla(0deg, 0%, 100%, 0.3);
+  margin-right: 1rem;
+}
+.container_main .container_item .container_header .container_header_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /*color: $color-p-White;*/
+}
+.container_main .container_item .container_header .container_header_text h2 {
+  font: 600 0.8125rem "Barlow Semi Condensed", sans-serif;
+}
+.container_main .container_item .container_header .container_header_text p {
+  font: 500 0.7rem "Barlow Semi Condensed", sans-serif;
+  opacity: 50%;
+}
+.container_main .container_item .container_citations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container_main .container_item .container_citations h1 {
+  font: 600 1.24rem "Barlow Semi Condensed", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.container_main .container_item .container_citations p {
+  font: 500 0.85rem "Barlow Semi Condensed", sans-serif;
+  line-height: 1.2rem;
+  opacity: 70%;
+  margin-top: 1rem;
+}
+.container_main .item_a {
+  grid-area: a;
+  background: url(../images/bg-pattern-quotation.svg), hsl(263deg, 55%, 52%);
+  background-repeat: no-repeat;
+  background-position: top right 1.8rem;
+}
+.container_main .item_a .container_header .container_header_text {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_a .container_citations {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_b {
+  grid-area: b;
+  background: hsl(217deg, 19%, 35%);
+}
+.container_main .item_b .container_header .container_header_text {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_b .container_citations {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_c {
+  grid-area: c;
+  background: hsl(0deg, 0%, 100%);
+}
+.container_main .item_c .container_header .container_header_text {
+  color: hsl(0deg, 0%, 0%);
+}
+.container_main .item_c .container_citations {
+  color: hsl(0deg, 0%, 0%);
+}
+.container_main .item_d {
+  grid-area: d;
+  background: hsl(219deg, 29%, 14%);
+}
+.container_main .item_d .container_header .container_header_text {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_d .container_citations {
+  color: hsl(0deg, 0%, 100%);
+}
+.container_main .item_e {
+  grid-area: e;
+  background: hsl(0deg, 0%, 100%);
+}
+.container_main .item_e .container_header .container_header_text {
+  color: hsl(0deg, 0%, 0%);
+}
+.container_main .item_e .container_citations {
+  color: hsl(0deg, 0%, 0%);
+}/*# sourceMappingURL=style.css.map */

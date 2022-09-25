@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/*font-family*/
+    $font-family: 'Barlow Semi Condensed', sans-serif;
+/*Colors*/
+    /*Primary*/
+    $color-p-Moderate-violet: hsl(263, 55%, 52%);
+    $color-p-Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    $color-p-Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    $color-p-White: hsl(0, 0%, 100%);
+    $color-p-black: hsl(0, 0%, 0%);
+    /*Neutral*/
+    $color-n-Light-gray: hsl(0, 0%, 81%);
+    $color-n-Light-grayish-blue: hsl(210, 46%, 95%);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    background: $color-n-Light-grayish-blue;
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+
+.container_main{
+    /*background-color: red;*/
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+                        "a"
+                        "b"
+                        "c"
+                        "d"
+                        "e";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1.2rem;
+
+    .container_item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        padding: 1.5rem 2rem;
+
+        .container_header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img{
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                border: 2px solid hsla(0, 0%, 100%, 0.3);
+                margin-right: 1rem;
+            }
+            .container_header_text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                /*color: $color-p-White;*/         
+                                
+                h2{
+                    font: 600 .8125rem $font-family;
+                }
+                p{
+                    font: 500 .7rem $font-family;
+                    opacity: 50%;
+                }
+            }
+        }
+        .container_citations{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            h1{
+                font: 600 1.24rem $font-family;
+                line-height: 1.5rem;
+                margin-top: 1rem;
+            }
+            p{
+                font: 500 .85rem $font-family;                
+                line-height: 1.2rem;
+                opacity: 70%;
+                margin-top: 1rem;
+            }
+        }
+        
+    }
+    .item_a{        
+        grid-area: a;
+        background: url(../images/bg-pattern-quotation.svg), $color-p-Moderate-violet;
+        background-repeat: no-repeat;
+        background-position: top right 1.8rem;
+        .container_header{
+            .container_header_text{
+                color: $color-p-White;
+            }
+        }
+        .container_citations{
+            color: $color-p-White;
+        }
+    }
+    .item_b{        
+        grid-area: b;
+        background: $color-p-Very-dark-grayish-blue;
+        .container_header{
+            .container_header_text{
+                color: $color-p-White;
+            }
+        }
+        .container_citations{
+            color: $color-p-White;
+        }
+    }    
+    .item_c{        
+        grid-area: c;
+        background: $color-p-White;
+        .container_header{
+            .container_header_text{
+                color: $color-p-black;
+            }
+        }
+        .container_citations{
+            color: $color-p-black;
+        }
+    }    
+    .item_d{        
+        grid-area: d;
+        background: $color-p-Very-dark-blackish-blue;
+        .container_header{
+            .container_header_text{
+                color: $color-p-White;
+            }
+        }
+        .container_citations{
+            color: $color-p-White;
+        }
+    }
+    .item_e{        
+        grid-area: e;
+        background: $color-p-White;
+        .container_header{
+            .container_header_text{
+                color: $color-p-black;
+            }
+        }
+        .container_citations{
+            color: $color-p-black;
+        }
+    }
+    
+
+}
+

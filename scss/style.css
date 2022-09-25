@@ -31,6 +31,7 @@ body .attribution a {
 .container_main {
   /*background-color: red;*/
   width: 100%;
+  max-width: 75rem;
   height: auto;
   display: grid;
   grid-template-areas: "a" "b" "c" "d" "e";
@@ -141,4 +142,19 @@ body .attribution a {
 }
 .container_main .item_e .container_citations {
   color: hsl(0deg, 0%, 0%);
+}
+
+@media only screen and (min-width: 50rem) {
+  .container_main {
+    grid-template-areas: "a d" "a d" "b e" "c e";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+@media only screen and (min-width: 62.5rem) {
+  .container_main {
+    grid-template-areas: "a a b e" "c d d e";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
